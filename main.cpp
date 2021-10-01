@@ -8,6 +8,12 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
+    
+    // presentation
+    cout<<""<<endl;
+    cout<<"Cpp Password Generator"<<endl;
+    cout<<"THE tool you need to stay safe online !"<<endl;
+    cout<<""<<endl;
 
     bool argument = false;
 
@@ -28,7 +34,7 @@ int main(int argc, char* argv[]) {
         passwdLenght = atoi(argv[2]);
     }
     else {
-        cout<<"how many char do you want: ";
+        cout<<"how many chararacters do you want in your password (8 is the minimum to have a strong password, and 12 makes a really strong password): ";
         cin>>passwdLenght;
     }
 
@@ -41,6 +47,8 @@ int main(int argc, char* argv[]) {
             finnalPass+=chars[Random];
         }
     }
+    
     cout<<finnalPass<<endl;
+    cout<<"If you want to check the strength of your new password, you might want to go to the website howsecureismypassword.net ."<<endl;
 
 }
